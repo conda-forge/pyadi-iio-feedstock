@@ -5,9 +5,13 @@ Home: https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio
 
 Package license: LicenseRef-BSD-Analog-Devices
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyadi-iio-feedstock/blob/master/LICENSE.txt)
 
 Summary: Interfaces to stream data from ADI hardware
+
+Development: https://github.com/analogdevicesinc/pyadi-iio
+
+Documentation: https://analogdevicesinc.github.io/pyadi-iio/
 
 To simplify the use of different devices a python package was created interface
 with the different IIO drivers. The module pyadi-iio, provides device-specific
