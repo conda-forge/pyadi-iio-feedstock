@@ -11,7 +11,7 @@ source:
   sha256: d788b11cc314f7d7ba9e900427a964a38ba5a1feb373d715f0052f2fc1f73f4c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   # moving test package into adi package to avoid possible global name conflict
   script: mv test adi/ && {{ PYTHON }} -m pip install . -vv
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
   run:
     - fs
-    - libiio
+    - pylibiio
     - numpy
     - python >=3.6
 
