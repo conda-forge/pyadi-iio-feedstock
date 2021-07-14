@@ -1,5 +1,5 @@
 {% set name = "pyadi-iio" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/analogdevicesinc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d788b11cc314f7d7ba9e900427a964a38ba5a1feb373d715f0052f2fc1f73f4c
+  sha256: 665c0031360f62f0449e8f37328c9605bf1864be0f08597a4209298b63eb5bd2
 
 build:
-  number: 1
+  number: 0
   noarch: python
   # moving test package into adi package to avoid possible global name conflict
   script: mv test adi/ && {{ PYTHON }} -m pip install . -vv
@@ -22,6 +22,7 @@ requirements:
     - python >=3.6
   run:
     - fs
+    - paramiko
     - pylibiio
     - numpy
     - python >=3.6
