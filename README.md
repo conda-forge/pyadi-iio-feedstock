@@ -1,11 +1,11 @@
-About pyadi-iio
-===============
+About pyadi-iio-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyadi-iio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://wiki.analog.com/resources/tools-software/linux-software/pyadi-iio
 
 Package license: LicenseRef-BSD-Analog-Devices
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyadi-iio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interfaces to stream data from ADI hardware
 
