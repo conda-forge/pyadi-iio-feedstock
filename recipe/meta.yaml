@@ -11,7 +11,7 @@ source:
   sha256: 4f74cab0a43181cbab0dc8fd24ceba9796aba4c74b32596e6c0779ea06572ff3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   # moving test package into adi package to avoid possible global name conflict
   script: mv test adi/ && {{ PYTHON }} -m pip install . -vv
@@ -19,15 +19,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - fs
     - paramiko
     - pylibiio
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - adi
 
