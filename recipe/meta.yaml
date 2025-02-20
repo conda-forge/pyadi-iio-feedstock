@@ -1,5 +1,5 @@
 {% set name = "pyadi-iio" %}
-{% set version = "0.0.18" %}
+{% set version = "0.0.19" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/analogdevicesinc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4f74cab0a43181cbab0dc8fd24ceba9796aba4c74b32596e6c0779ea06572ff3
+  sha256: d949de0215d14b87c949f5d0aecbed1de45514533b953029efb94b7f4b1f4c9c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   # moving test package into adi package to avoid possible global name conflict
   script: mv test adi/ && {{ PYTHON }} -m pip install . -vv
