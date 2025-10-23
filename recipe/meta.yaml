@@ -1,5 +1,5 @@
 {% set name = "pyadi-iio" %}
-{% set version = "0.0.19" %}
+{% set version = "0.0.20" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/analogdevicesinc/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d949de0215d14b87c949f5d0aecbed1de45514533b953029efb94b7f4b1f4c9c
+  sha256: 2b2a09b97dbb4f68ede0583e9631c584a569a573f9146d211e3916f41f4fe25a
 
 build:
   number: 0
